@@ -11,7 +11,7 @@ class Skmp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Nitesh000/skmp/releases/download/v0.1.0/skmp-darwin-amd64"
-      sha256 "020325ecf600aef685cedfaead55a55cb1f3a36629a64be924b66101210170ea"
+      sha256 "7975739e38ab0435094eb07152112715824f1f5ccb9a0f45f2af2366333fc16e"
 
       define_method(:install) do
         bin.install "skmp-darwin-amd64" => "skmp"
@@ -19,7 +19,7 @@ class Skmp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Nitesh000/skmp/releases/download/v0.1.0/skmp-darwin-arm64"
-      sha256 "f501cd8c51464426da745b53561a72c5abc75b03166ea87483697cf62da54330"
+      sha256 "387a454bc2c4bc19f1e46b7f4facf24366b9f87c7b96edd9ec921c544bf0a312"
 
       define_method(:install) do
         bin.install "skmp-darwin-arm64" => "skmp"
@@ -30,14 +30,14 @@ class Skmp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Nitesh000/skmp/releases/download/v0.1.0/skmp-linux-amd64"
-      sha256 "43ae3ae7030370d584c0bfcedc8352a0e3a9d1d4a2f6d0b57bc03d4471e6cb22"
+      sha256 "76654a6c62f208b8c5aecea0fc7daf2244429b685b034a9195c46be2270adef0"
       define_method(:install) do
         bin.install "skmp-linux-amd64" => "skmp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Nitesh000/skmp/releases/download/v0.1.0/skmp-linux-arm64"
-      sha256 "ab3eeac6ab8ddb61340ace2c55badb918caf0ef5983ba795e44060eef216244a"
+      sha256 "b5b49cb5f03d7048d4df3426d6c39aa6dda60c0e49bb9ab99678510948b418b4"
       define_method(:install) do
         bin.install "skmp-linux-arm64" => "skmp"
       end
