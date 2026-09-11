@@ -5,21 +5,21 @@
 class Skmp < Formula
   desc "Skill marketplace for AI agent skills"
   homepage "https://github.com/Nitesh000/skmp"
-  version "0.1.1"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.1/skmp-darwin-amd64"
-      sha256 "20f39238c93ba7813c39a5d90ddf505d906131cf8143bbcea9b3764fd595271b"
+      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.3/skmp-darwin-amd64"
+      sha256 "785a27450e0a303ab3e4f723aaee8c6f5f2c483b90d47079d8287f6bfb115822"
 
       define_method(:install) do
         bin.install "skmp-darwin-amd64" => "skmp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.1/skmp-darwin-arm64"
-      sha256 "15126a1d60296eb091b8cf4c7cfa84df6caed62fb5481cc2905c90febf173a83"
+      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.3/skmp-darwin-arm64"
+      sha256 "111bd073c6ab117e764528f80c4efb244bc789d2a899115ba5d69a96344b8d5f"
 
       define_method(:install) do
         bin.install "skmp-darwin-arm64" => "skmp"
@@ -29,15 +29,15 @@ class Skmp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.1/skmp-linux-amd64"
-      sha256 "a7759103f1855c05ae90ff14e660cd5e0cc10346b423eba3e500bd4ae470cab2"
+      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.3/skmp-linux-amd64"
+      sha256 "ef67371dd7f7f7bc8e8659927af08d09f73feee754dd876626a83ae0658ed979"
       define_method(:install) do
         bin.install "skmp-linux-amd64" => "skmp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.1/skmp-linux-arm64"
-      sha256 "20c1a34aea7b43206789f3fb804ff42688d2d7262d07e1ae0b2dda110792bfc2"
+      url "https://github.com/Nitesh000/skmp/releases/download/v0.1.3/skmp-linux-arm64"
+      sha256 "1c1e6170590f212af9473ffcd47ab22f16bf54280bd0f6e9c9f2b6d97e04e58d"
       define_method(:install) do
         bin.install "skmp-linux-arm64" => "skmp"
       end
